@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchichtKnecht's Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ff0000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ff0000;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .twitch-player, .vod-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .vod-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="ProfilBild.png" alt="SchichtKnecht Logo">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vod">VODs</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="social-icons">
+    <h2>Finde mich auf:</h2>
+    <a href="https://www.instagram.com/schichtknecht_" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@SchichtKnecht__" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@schichtknecht_" target="_blank">TikTok</a>
+    <a href="https://www.twitch.tv/SchichtKnecht_" target="_blank">Twitch</a>
+</section>
+
+<section class="twitch-player">
+    <h2>Meine Twitch-Clips</h2>
+    <iframe 
+    src="https://player.twitch.tv/?channel=SchichtKnecht_&parent=deinedomain.com" 
+    frameborder="0" 
+    allowfullscreen="true" 
+    scrolling="no" 
+    height="378" 
+    width="620">
+</iframe>
+
+</section>
+
+<section id="vod" class="vod-section">
+    <h2>VODs</h2>
+    <iframe 
+        src="https://player.twitch.tv/?channel=SchichtKnecht_&parent=localhost&autoplay=false" 
+        frameborder="0" 
+        allowfullscreen="true" 
+        scrolling="no">
+    </iframe>
+</section>
+
+</body>
+</html>
